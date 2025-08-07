@@ -8,7 +8,11 @@ def size(cms):
         return 'L'
 
 
-assert(size(37) == 'S')
-assert(size(40) == 'M')
-assert(size(43) == 'L')
+assert(size(37) == 'S') # Less than 38
+assert(size(40) == 'M') # Between 38 and 42
+assert(size(43) == 'L') # greater than 42
+
+#Exactly 38 and 42
+assert(size(42) == 'L')
+assert(size(38) == 'M')
 print("All is well (maybe!)")
